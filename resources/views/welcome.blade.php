@@ -41,22 +41,33 @@
                 <p class="text-2xl static pt-4 pl-4 pb-3 text-center text-black">Bem Vindo à ElectroHouse
                 <p>
             </div>
-
-            <p class="text-xl static pt-4 pl-4 text-black">Eletrodomésticos recondicionados
-            <p>
-
+            @if (!Auth::User())
+            @else
+                <p class="text-xl static pt-4 pl-4 text-black">Eletrodomésticos recondicionados
+                <p>
+            @endif
             <div class=" border-3 ml-2 mr-2 h-1 rounded bg-black">
                 <br>
-          
-            <div>
 
-                 <livewire:produto-show>
+
+
+                @if (!Auth::User())
+                    <div>
+                        <p class="text-2xl static pt-4 pl-4 pb-3 text-center text-black">É preciso estar autenticado
+                            para poder ver os produtos
+                        <p>
+                    </div>
+                @else
+                    <div>
+
+                        <livewire:produto-show>
+
+                    </div>
+                @endif
 
             </div>
 
-    </div>
-
-    </div>
+        </div>
 
 
 </x-app-layout>
