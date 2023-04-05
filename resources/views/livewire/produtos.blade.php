@@ -203,7 +203,7 @@
 
             <div class="mt-4">
                 <x-label for="preco" value="{{ __('Preco') }}" ></x-jet-label>
-                <x-input wire:model="preco" id="" class="block mt-1 w-full" type="text" ></x-jet-input>
+                <x-input wire:model="preco" id="" class="block mt-1 w-full" type="text" placeholder="0000€"></x-jet-input>
                 @error('preco') <span class="error">{{ $message }}</span> @enderror
             </div>       
 
@@ -233,7 +233,7 @@
                 @if ($featuredImage)
                 <img src="{{ $featuredImage->temporaryUrl() }}">
             @else
-                <div class="bg-gray-100 border align-center border-gray-400 h-40 w-50"></div>
+               
             @endif
 
             @error('featured_image') <span class="error">{{ $message }}</span> @enderror

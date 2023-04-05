@@ -2,12 +2,12 @@
 
 
 <div class="p-4 mb-4 pr-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-200 dark:text-blue-400">
-<p class="text-xl text-black">{{$item->nome}}</p> 
-  <p class="text-l text-black">Marca: {{ $p->Subcategorias->nome }}  </p>
-<p class="text-l text-black">Marca: {{ $p->marca }}  </p>  
+<p class="text-3xl text-black">{{$item->nome}}</p> 
+  <p class="text-2xl text-black">{{ $p->Subcategorias->nome }}  </p>
+<p class="text-xl text-black"> {{ $p->marca }}  </p>  
 <p>
   @if (!empty($p->featured_image ))
-                                <img style="width: 400.699px; height: 302px; margin: 14.9px 0px;" src="{{url('storage/photos/'. $p->featured_image)}}"/>
+                                <img style="width: 340.699px; height: 362px; margin: 10.9px 22.0px;" src="{{url('storage/photos/'. $p->featured_image)}}"/>
                                    @else
                                    Nenhuma Foto Disponivel
    
@@ -17,6 +17,8 @@
   <p class="text-l text-black">Uso: {{$p->uso}}</p>
   <p class="text-l text-black">Modelo: {{ $p->modelo }}</p> 
   <p class="text-l text-black">Dimensões: {{ $p->dimensoes }}</p> 
+  <p class="text-3xl text-black">{{ $p->estado }}</p>
+
 
   <br>
 Contacte o número --- --- --- para Comprar/Reservar o item

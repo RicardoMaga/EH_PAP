@@ -51,8 +51,6 @@
                         <th scope="col" class="px-6 py-3">Nº de Tel</th>
                         <th scope="col" class="px-6 py-3">NIF</th>
                         <th scope="col" class="px-6 py-3">Morada</th>
-                        <th scope="col" class="px-6 py-3">Compras</th>
-                        <th scope="col" class="px-6 py-3">Reservas</th>
                         <th scope="col" class="px-6 py-3">Ação</th>
                        
                         <div class="flex-grow ">
@@ -105,12 +103,7 @@
                             <th scope="row"
                                 class="px-3 py-3 font-medium text-white whitespace-nowrap">
                                 {{ $item->morada }}</th>  
-                            <th scope="row"
-                                class="px-3 py-3 font-medium text-white whitespace-nowrap">
-                                {{ $item->compras }}</th>
-                             <th scope="row"
-                                class="py-3 font-medium text-white whitespace-nowrap">
-                                {{ $item->reservas }}</th>
+                           
                             <th scope="row"
                                 class="px-3 py-3">
                                 <button type="button"
@@ -178,7 +171,7 @@
             </div>
 
             <div class="mt-4">
-                <x-label for="nif" value="{{ __('Nif') }}" ></x-jet-label>
+                <x-label for="nif" value="{{ __('NIF') }}" ></x-jet-label>
                 <x-input wire:model="nif" id="" class="block mt-1 w-full" type="text" ></x-jet-input>
                 @error('nif') <span class="error">{{ $message }}</span> @enderror
             </div>
@@ -187,18 +180,6 @@
                 <x-label for="morada" value="{{ __('Morada') }}" ></x-jet-label>
                 <x-input wire:model="morada" id="" class="block mt-1 w-full" type="text" ></x-jet-input>
                 @error('morada') <span class="error">{{ $message }}</span> @enderror
-            </div>
-        
-            <div class="mt-4">
-                <x-label for="compras" value="{{ __('Compras') }}" ></x-jet-label>
-                <x-input wire:model="compras" id="" class="block mt-1 w-full" type="text" ></x-jet-input>
-                @error('compras') <span class="error">{{ $message }}</span> @enderror
-            </div>  
-
-            <div class="mt-4">
-                <x-label for="reservas" value="{{ __('Reservas') }}" ></x-jet-label>
-                <x-input wire:model="reservas" id="" class="block mt-1 w-full" type="text" ></x-jet-input>
-                @error('reservas') <span class="error">{{ $message }}</span> @enderror
             </div>       
  
         </x-slot>

@@ -33,7 +33,13 @@
 
   <div class=" border-3 ml-2 mr-2 h-1 rounded bg-black">
 
+<div>
+
+                        <livewire:produto-show>
+
+                    </div>
 </div>
+
 
 </div>
 

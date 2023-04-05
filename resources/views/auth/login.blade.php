@@ -11,7 +11,7 @@
  
     <button class="pt-4 pr-2 pl-2 pb-4 text-lg  text-white rounded-none hover:bg-gray-800 "><a href="/reservas">Reservas</a></button>
 
-    <button class="pt-4 pr-2 pl-2 pb-4 text-lg  text-white rounded-none hover:bg-gray-800 "><a href="/contacto">Contacto</button>
+    <button class="pt-4 pr-2 pl-2 pb-4 text-lg  text-white rounded-none hover:bg-gray-800 "><a href="/contactos">Contacto</button>
 
     
 <a class="pr-10 pl-10">
@@ -27,7 +27,10 @@
     @endif
 
 
+
+
     <x-authentication-card>
+    
         <x-slot name="logo">
             <x-authentication-card-logo />
         </x-slot>

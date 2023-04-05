@@ -53,7 +53,7 @@
 
                 @if (!Auth::User())
                     <div>
-                        <p class="text-2xl static pt-4 pl-4 pb-3 text-center text-black">É preciso estar autenticado
+                        <p class="text-2xl static pt-4 pl-4 pb-3 text-center text-black">É preciso fazer autenticação
                             para poder ver os produtos
                         <p>
                     </div>

@@ -59,8 +59,8 @@ class Produto extends Model
 	public static function prod_estado()
     {
         return [
-			'disponivel' => 'Disponivel',
-            'reservado' => 'Reservado'
+			'Disponível' => 'Disponível',
+            'Reservado' => 'Reservado'
         ];
     }
 
