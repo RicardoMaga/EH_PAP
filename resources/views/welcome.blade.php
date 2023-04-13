@@ -36,7 +36,7 @@
                 class=" pt-4 pr-4 pl-5 pb-4 text-lg text-white rounded-none absolute right-0 top-0 hover:bg-gray-800 "><a
                     href="/logout">Encerrar Sessão</a></button>
         @endif
-        <div class="bg-white h-screen w-full">
+        <div class="bg-gray-200 h-screen w-full">
             <div>
                 <p class="text-2xl static pt-4 pl-4 pb-3 text-center text-black">Bem Vindo à ElectroHouse
                 <p>

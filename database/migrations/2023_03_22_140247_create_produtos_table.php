@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('dimensoes');
             $table->string('preco');
             $table->string('uso');
+            $table->string('estado');
         });
     }
 

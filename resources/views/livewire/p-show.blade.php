@@ -1,7 +1,7 @@
 <div>
 
 
-<div class="p-4 mb-4 pr-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-200 dark:text-blue-400">
+<div class="p-4 mb-4 pr-4 text-sm text-blue-800 rounded-lg bg-white dark:bg-white dark:text-blue-400">
 <p class="text-3xl text-black">{{$item->nome}}</p> 
   <p class="text-2xl text-black">{{ $p->Subcategorias->nome }}  </p>
 <p class="text-xl text-black"> {{ $p->marca }}  </p>  

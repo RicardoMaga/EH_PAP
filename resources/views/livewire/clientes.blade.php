@@ -141,7 +141,8 @@
 
             <div class="mt-4"> 
             <x-label for="roles" value="{{ __('Roles') }}" />
-            <select wire:model.defer="role" id="" class="block appearance-none w-full bg-gray-100 border border-gray-200 text-gray-700 py-3 px-4 pr-8 round leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+            <select wire:model.defer="role" id="" class="block appearance-none w-full bg-gray-100 border
+             border-gray-200 text-gray-700 py-3 px-4 pr-8 round leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
              <option value="">Defina a role</option>
               @foreach (App\Models\User::userRoleList() as $key => $value)
                <option value="{{ $key }}">{{ $value }}</option>

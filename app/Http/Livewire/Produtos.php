@@ -69,6 +69,7 @@ class Produtos extends Component
             'estado' => $this->estado,
             'featured_image' => $this->featuredImage-> hashName()
             
+            
         ];
         
     }

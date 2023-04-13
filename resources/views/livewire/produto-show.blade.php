@@ -12,14 +12,14 @@
                         </svg>
                     </div>
                     <input type="search" id="default-search" wire:model="search"
-                        class="block w-full p-4 pl-10  text-smbg-white border-b dark:bg-gray-200
+                        class="block w-full p-4 pl-10  text-smbg-white border-b dark:bg-white
                         dark:border-gray-700 text-black"
                         placeholder="Procurar Produtos" required>
                 </div>
             </form>
             <br>
 
-    <div class="grid grid-cols-3 gap-2">
+    <div class="grid grid-cols-3 gap-2 bg-gray-200">
 
     @foreach ($data as $item)
     @foreach ($item->produtos as $p)
